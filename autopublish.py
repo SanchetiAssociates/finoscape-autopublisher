@@ -32,7 +32,7 @@ NOTIFY_EMAIL   = os.environ.get("NOTIFY_EMAIL",   "")   # Your email
 GMAIL_USER     = os.environ.get("GMAIL_USER",     "")   # Gmail sending account
 GMAIL_PASS     = os.environ.get("GMAIL_PASS",     "")   # Gmail App Password
 
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
 
 # ── CATEGORY CACHE ────────────────────────────────────────────────────────
 CATEGORY_IDS = {}
