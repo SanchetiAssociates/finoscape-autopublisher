@@ -1,0 +1,22 @@
+services:
+  - type: cron
+    name: finoscape-autopublisher-free
+    runtime: python
+    schedule: "30 1 * * *"   # 1:30 AM UTC = 7:00 AM IST daily
+    buildCommand: pip install -r requirements.txt
+    startCommand: python autopublish.py
+    envVars:
+      - key: WP_URL
+        value: https://finoscape.com
+      - key: WP_USER
+        value: finoscapehuf
+      - key: WP_APP_PASS
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NOTIFY_EMAIL
+        sync: false
+      - key: GMAIL_USER
+        sync: false
+      - key: GMAIL_PASS
+        sync: false
